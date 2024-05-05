@@ -3,8 +3,9 @@ import React, { createContext, useEffect, useReducer } from "react";
 import "./cart.css";
 import { products } from "./products";
 import ContextCart from "./ContextCart";
-export const CartContext = createContext();
 import { reducer } from "./reducer";
+export const CartContext = createContext();
+
 const initialState = {
   item: products,
   totalAmount: 0,
